@@ -12,3 +12,20 @@ type VideoInfo struct {
 	CreateTime  string
 	DisplayTime string
 }
+
+type Comment struct {
+	ID         string
+	VideoID    string
+	AuthorName string
+	Content    string
+}
+
+type SimpleSession struct {
+	UserName string
+	TTL      int64
+}
+
+type SingUp struct {
+	Success   bool
+	SessionID string
+}
